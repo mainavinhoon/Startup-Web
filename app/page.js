@@ -1,11 +1,13 @@
 "use client"
 import React from "react"
-import Login from "../pages/login/Login"
+import HomePage from "@/pages/home/Home"
+import Navbar from "@/componenets/navbar/Navbar"
 
  const Home = () => {
   return (
   <>
-    <Login />
+    <Navbar/>
+    <HomePage/>
   </>
   ) 
 }
