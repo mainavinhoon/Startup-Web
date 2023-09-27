@@ -1,0 +1,9 @@
+.login-container{
+    width: fix fit-content;
+    background-color: rgb(116, 43, 184);
+    position: relative;
+    text-align: center;
+    font-size: 150px;
+    border-radius : 10px;
+
+}
