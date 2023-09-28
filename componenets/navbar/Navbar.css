@@ -1,5 +1,4 @@
-/* Navbar.css */
-/* Import Font Awesome CSS */
+
 @import '~font-awesome/css/font-awesome.css';
 
 .nav-bg {
@@ -27,11 +26,11 @@
     padding: 0;
   }
   
-  /* Add a media query for responsiveness */
+  
   @media (max-width: 768px) {
     .middle-flex {
-      margin-left: 0; /* Reset margin for smaller screens */
-      justify-content: center; /* Center menu items horizontally */
+      margin-left: 0; 
+      justify-content: center; 
     }
   }
   
