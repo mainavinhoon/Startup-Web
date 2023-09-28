@@ -3,6 +3,7 @@ import React from 'react'
 import "./login.css"
 import Templete from '@/componenets/userlogin/Templete'
 
+
  const Login = ({setIsLoggedIn}) => {
   return (
     <>

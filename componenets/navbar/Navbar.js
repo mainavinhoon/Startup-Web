@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image'
 // import Logo from '@/public/Logo.svg';
 import Link from 'next/link'
-import './Navbar.css'
+import './navbar.css'
 
  const Navbar = () => {
   const [isSearchVisible, setSearchVisible] = useState(false);
@@ -14,9 +14,10 @@ import './Navbar.css'
   
   return (
     <>
-       <nav className='nav-bg py-2 px-3'>
+       <nav className='nav-bg'>
         <div>
-       <Image className='logo-set' src={"/logo-in-black.svg"} alt='Logo' width={60} height={40}/> </div>
+       <Image className='logo-set' src={"/logo-in-black.svg"} alt='Logo' width={60} height={40}/> 
+       </div>
 
        <div className='middle'>
         <ul className='middle-flex '>
@@ -24,21 +25,35 @@ import './Navbar.css'
             <Link href="/">
               Home
             </Link>
-          </li><li>
+          </li>
+          <li>
             <Link href="/">
               Events
             </Link>
-          </li><li>
+          </li>
+          <li>
             <Link href="/">
               Explore
             </Link>
-          </li><li>
+          </li>
+          <li>
             <Link href="/">
-              Notifications
+             Notifications
             </Link>
-          </li><li>
-            <Link href="/">
+          </li>
+          <li>
+            <Link href="Message">
               Message
+            </Link>
+          </li>
+          <li>
+            <Link href="/Login">
+              Login
+            </Link>
+          </li>
+          <li>
+            <Link href="/SignUp">
+              Sign Up
             </Link>
           </li>
         </ul>

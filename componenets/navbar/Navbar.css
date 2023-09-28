@@ -1,8 +1,6 @@
 
-@import '~font-awesome/css/font-awesome.css';
-
 .nav-bg {
-    background-color: azure;
+    background-color: rgb(139, 8, 247);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +8,7 @@
   }
   
   .logo-set {
-    margin-left: 50px;
+    margin-left: 30px;
   }
   
   .middle-flex {
@@ -18,7 +16,7 @@
     padding: 0;
     display: flex;
     gap: 20px;
-    margin-left: 400px;
+    margin-left: 250px;
   }
   
   .middle-flex li {
