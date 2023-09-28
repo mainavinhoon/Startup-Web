@@ -14,13 +14,13 @@ import './navbar.css'
   
   return (
     <>
-       <nav className='nav-bg'>
+       <nav className=' bg-[blueviolet] flex items-center  '>
         <div>
        <Image className='logo-set' src={"/logo-in-black.svg"} alt='Logo' width={60} height={40}/> 
        </div>
 
        <div className='middle'>
-        <ul className='middle-flex '>
+        <ul className=' flex items-center ml-[250px] p-8  gap-8 ;'>
           <li>
             <Link href="/">
               Home
@@ -58,7 +58,7 @@ import './navbar.css'
           </li>
         </ul>
        </div>
-       <div className="search-icon" onClick={toggleSearch}>
+       <div className=" ml-[60px] " onClick={toggleSearch}>
           <i className={`fas fa-search ${isSearchVisible ? 'active' : ''}`}></i>
         </div>
         <div className={`search-field ${isSearchVisible ? 'active' : ''}`}>
