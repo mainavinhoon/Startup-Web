@@ -27,22 +27,22 @@ import './navbar.css'
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/Events">
               Events
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/Explore">
               Explore
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/Notifications">
              Notifications
             </Link>
           </li>
           <li>
-            <Link href="Message">
+            <Link href="/">
               Message
             </Link>
           </li>

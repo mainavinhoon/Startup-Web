@@ -10,5 +10,5 @@ import './globals.css'
     <HomePage/>
   </>
   ) 
-}
+} 
 export default Home;

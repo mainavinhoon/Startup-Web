@@ -6,7 +6,7 @@ import Profile from '@/componenets/profile/Profile'
 const HomePage = () => {
   return (
     <>
-   <Navbar/>
+
     <Profile/>
     <Feed/>
     </>
