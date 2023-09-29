@@ -20,14 +20,14 @@ import './navbar.css'
        </div>
 
        <div className='middle'>
-        <ul className=' flex items-center ml-[250px] p-8  gap-8 ;'>
+        <ul className=' flex items-center ml-[250px] p-8  gap-7 ;'>
           <li>
             <Link href="/">
               Home
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/page.js">
               Events
             </Link>
           </li>

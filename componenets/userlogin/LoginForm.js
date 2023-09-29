@@ -21,7 +21,7 @@ const LoginForm = () => {
     <form>
         <label>
             <p>
-                Email Adress<sup>*</sup>
+                Email Address<sup>*</sup>
             </p>
             <input
 
