@@ -3,7 +3,10 @@ import React from 'react'
 
 const Feed = () => {
   return (
-    <div>feed</div>
+    <div>
+        Footer
+                   
+      </div>
   )
 }
 
