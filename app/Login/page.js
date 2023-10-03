@@ -7,8 +7,7 @@ import Templete from '@/componenets/userlogin/Templete'
  const Login = ({setIsLoggedIn}) => {
   return (
     <>
-    <div className='w-[fix fit-content]   bg-[blueviolet]  relative text-center text-[150px] rounded-[10px]'>Login page</div>
-    <Templete
+      <Templete
 
     title="Welcome Back"
     desc1="You are at the login page of UniteUp"

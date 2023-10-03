@@ -18,16 +18,20 @@ const SignUpForm = () => {
   }
 
   const [showPassword, setshowPassword] = useState(false)
+  const [showConfirmPassword, setshowConfirmPassword] = useState(false)
   return (
     <div>
-      <div>
+      <div className="flex bg-slate-500 p-1 gap-x-2 my-6 rounded-full max-w-max">
+        
         <button>As Individual</button>
         <button>As Company</button>
-        <form>
-          <div>
-            <label>
-              <p>
-                First Name<sup>*</sup>
+
+     </div>
+        <form className="mt-10">
+          <div className="mt-4">
+            <label className='w-full'>
+              <p className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] mt-6'>
+                First Name<sup className=' text-red-700'>*</sup>
               </p>
               <input
                 required
@@ -36,12 +40,13 @@ const SignUpForm = () => {
                 onChange={changeHandler}
                 placeholder="Enter First Name"
                 value={FormData.firstname}
+                className='bg-richblack-700 rounded-[0.5rem] text-richblack-5 w-full p-[12px]'
               />
             </label>
 
-            <label>
-              <p>
-                Last Name<sup>*</sup>
+            <label className='w-full'>
+              <p className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] mt-6'>
+                Last Name<sup className=' text-red-700'>*</sup>
               </p>
               <input
                 required
@@ -50,12 +55,13 @@ const SignUpForm = () => {
                 onChange={changeHandler}
                 placeholder="Enter Last Name"
                 value={FormData.lastnametname}
+                className='bg-richblack-700 rounded-[0.5rem] text-richblack-5 w-full p-[12px]'
               />
             </label>
           </div>
-          <label>
-            <p>
-              Email <sup>*</sup>
+          <label className='w-full mt-4'>
+            <p className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] mt-6'>
+              Email <sup className=' text-red-700'>*</sup>
             </p>
             <input
               required
@@ -64,13 +70,14 @@ const SignUpForm = () => {
               onChange={changeHandler}
               placeholder="Enter Your Email"
               value={FormData.email}
+              className='bg-richblack-700 rounded-[0.5rem] text-richblack-5 w-full p-[12px]'
             />
           </label>
 
-          <div>
-          <label>
-            <p>
-                Create Password<sup>*</sup>
+          <div  className="flex gap-x-4 mt-6">
+          <label className='w-full relative'>
+            <p className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]'>
+                Create Password<sup className=' text-red-700'>*</sup>
             </p>
             <input
 
@@ -80,13 +87,14 @@ const SignUpForm = () => {
                 onChange={changeHandler}
                 placeholder="Enter Password"
                 name="password"
+                className='bg-richblack-700 rounded-[0.5rem] text-richblack-5 w-full p-[12px]'
             />
-            <span onClick={() => setshowPassword((prev) => !prev)}>
-                {showPassword ? (<AiOutlineEyeInvisible/>): (<AiOutlineEye/>)}
+            <span className='absolute right-3 top-[40px] cursor-pointer' onClick={() => setshowPassword((prev) => !prev)}>
+                {showPassword ? (<AiOutlineEyeInvisible fontSize={24}/>): (<AiOutlineEye fontSize={24}/>)}
             </span>
         </label>
-        <label>
-            <p>
+        <label className='w-full relative '>
+            <p className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]'>
                Confirm Password<sup>*</sup>
             </p>
             <input
@@ -97,17 +105,18 @@ const SignUpForm = () => {
                 onChange={changeHandler}
                 placeholder="Confirm Password"
                 name="confirmPassword"
+                className='bg-richblack-700 rounded-[0.5rem] text-richblack-5 w-full p-[12px]'
             />
-            <span onClick={() => setshowPassword((prev) => !prev)}>
-                {showPassword ? (<AiOutlineEyeInvisible/>): (<AiOutlineEye/>)}
+            <span className='absolute right-3 top-[40px] cursor-pointer' onClick={() => setshowConfirmPassword((prev) => !prev)}>
+                {showConfirmPassword ? (<AiOutlineEyeInvisible fontSize={24}/>): (<AiOutlineEye fontSize={24}/>)}
             </span>
         </label>
           </div>
-          <button>
+          <button className='  w-full bg-gray-400 rounded-[8px] font-medium text-richblack-900 px-[12px] py-[8px] mt-6 '>
             Create Account
         </button>
         </form>
-      </div>
+     
     </div>
   );
 };

@@ -1,10 +1,8 @@
-"use client"
-
 import React from 'react'
 
 const Events = () => {
   return (
-    <div>page</div>
+    <div>Events</div>
   )
 }
 
