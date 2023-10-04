@@ -2,7 +2,9 @@
 import React, { useState } from 'react'
 import {AiOutlineEye,AiOutlineEyeInvisible } from "react-icons/ai"
 import Link from 'next/link'
-const LoginForm = () => {
+
+const LoginForm = (setIsLoggedIn) => {
+
 
     const [FormData, setFormData] = useState({
         email:"",password:""
@@ -16,9 +18,16 @@ const LoginForm = () => {
         ))
     }
 
+
+    function submitHandler(event) {
+        event.preventDefault();
+        setIsLoggedIn(true);
+      
+        
+    }
     const [showPassword, setshowPassword] = useState(false)
   return (
-    <form className='flex flex-col w-full gap-y-4 mt-6'>
+    <form onSubmit={submitHandler} className='flex flex-col w-full gap-y-4 mt-6'>
         <label className='w-full'>
             <p className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]'>
                 Email Address<sup className=' text-red-700'>*</sup>

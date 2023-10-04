@@ -1,8 +1,8 @@
 "use client"
 import React ,{ useState }from "react";
 import {AiOutlineEye,AiOutlineEyeInvisible } from "react-icons/ai"
-
-const SignUpForm = () => {
+import {toast} from "react-toastify"
+const SignUpForm = (setIsLoggedIn) => {
   const [FormData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -17,17 +17,39 @@ const SignUpForm = () => {
     }));
   }
 
+  const [accountType, setaccountType] = useState("instructor")
   const [showPassword, setshowPassword] = useState(false)
-  const [showConfirmPassword, setshowConfirmPassword] = useState(false)
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false)
+
+  function submitHandler(event) {
+    event.preventDefault();
+
+    if(FormData.password != FormData.confirmPassword){
+      toast.error("Passwords do not match")
+    }
+    setIsLoggedIn(true);
+    toast.success("Account Created")
+    const accountData ={
+      ...FormData
+    }
+    const finalaccountData={
+      ...accountData,
+      accountType
+
+    }
+    console.log(finalaccountData)
+  
+    
+}
   return (
     <div>
-      <div className="flex bg-slate-500 p-1 gap-x-2 my-6 rounded-full max-w-max">
+      <div className="flex bg-slate-100 p-1 gap-x-2 my-6 rounded-full max-w-max">
         
-        <button>As Individual</button>
-        <button>As Company</button>
+        <button onClick={() => setaccountType("student")} className={`${accountType === "student" ? " bg-slate-500 py-2 px-5 rounded-full transition-all duration-200": " bg-transparent py-2 px-5 rounded-full transition-all duration-200"}`}>As Individual</button>
+        <button onClick={() => setaccountType("instructor")} className={`${accountType === "instructor" ? " bg-slate-500 py-2 px-5 rounded-full transition-all duration-200": " bg-transparent py-2 px-5 rounded-full transition-all duration-200"}`}>As Company</button>
 
      </div>
-        <form className="mt-10">
+        <form onSubmit={submitHandler} className="mt-10">
           <div className="mt-4">
             <label className='w-full'>
               <p className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] mt-6'>
@@ -100,14 +122,14 @@ const SignUpForm = () => {
             <input
 
                 required
-                type={showPassword ? ("text"):("password")}
+                type={showConfirmPassword ? ("text"):("password")}
                 value={FormData.confirmPassword}
                 onChange={changeHandler}
                 placeholder="Confirm Password"
                 name="confirmPassword"
                 className='bg-richblack-700 rounded-[0.5rem] text-richblack-5 w-full p-[12px]'
             />
-            <span className='absolute right-3 top-[40px] cursor-pointer' onClick={() => setshowConfirmPassword((prev) => !prev)}>
+            <span className='absolute right-3 top-[40px] cursor-pointer' onClick={() => setShowConfirmPassword((prev) => !prev)}>
                 {showConfirmPassword ? (<AiOutlineEyeInvisible fontSize={24}/>): (<AiOutlineEye fontSize={24}/>)}
             </span>
         </label>
