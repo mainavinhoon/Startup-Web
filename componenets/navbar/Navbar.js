@@ -11,7 +11,7 @@ import './navbar.css';
 
 const Navbar = () => {
   const router = useRouter(); // Get the current route
-  console.log(router.pathname); 
+
 
   // Function to determine if a link is active based on the href
   const isLinkActive = (href) => router.pathname === href;

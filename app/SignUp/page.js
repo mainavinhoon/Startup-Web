@@ -6,7 +6,6 @@ const SignUp = (setIsLoggedIn) => {
   return (
    
     <>
-    <div className='w-[fix fit-content] bg-[blueviolet]  relative text-center text-[150px] rounded-[10px]'>Sign Up page</div>
     <Templete
 
     title="Welcome to Unite Up"
