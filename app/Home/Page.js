@@ -5,11 +5,11 @@ import Feed from '@/componenets/feed/Feed'
 import Profile from '@/componenets/profile/Profile'
 const HomePage = () => {
   return (
-    <>
+    <div className='flex'>
 
     <Profile/>
     <Feed/>
-    </>
+    </div>
   )
 }
 

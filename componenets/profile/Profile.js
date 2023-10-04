@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import Feed from '@/componenets/feed/Feed'
-const ProfileLogin = () => {
+const Profile = () => {
   return (
     <>
 
@@ -9,7 +9,7 @@ const ProfileLogin = () => {
       <div className='flex flex-col md:flex-row gap-5 bg-white rounded-[10px] '>
 
         {/* Sidebar */}
-        <div className='space-y-2 min-w-max max-w-lg relative flex flex-col items-center text-center'>
+        <div className='space-y-2 min-w-max max-w-lg relative flex flex-col items-center max-h-max text-center'>
           {/* Circular Profile Picture */}
           <div
             className=' w-20 h-20 mt-4 rounded-full overflow-hidden border-2 border-lime-950'
@@ -52,11 +52,6 @@ const ProfileLogin = () => {
       </div>
       
 
-      <div className=' bg-emerald-500 w-96 rounded-[10px]'>
-          
-          Creat a new post baby !!!
-            
-            </div>
     </main>
         
    
@@ -66,4 +61,4 @@ const ProfileLogin = () => {
   );
 }
 
-export default ProfileLogin;
+export default Profile;
