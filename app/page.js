@@ -10,15 +10,17 @@ import Explore from "./Explore/page"
 import Notifications from "./Notifications/page"
 import Message from "./Message/page"
 import Events from "./Events/page"
-
+import Navbar from "@/componenets/navbar/Navbar"
  const Home = () => {
 
 const [isLoggedin, setisLoggedin] = useState(false)
   return (
   <>
     <BrowserRouter>
-{/* 
+     
+    
     <Routes>
+      <Route path="/" element={<HomePage/>}/>
       <Route path="/Events" element={<Events/>}/>
       <Route path="/Explore" element={<Explore/>}/>
       <Route path="/Notifiactions" element={<Notifications/>}/>
@@ -26,9 +28,9 @@ const [isLoggedin, setisLoggedin] = useState(false)
       <Route path="/Events" element={<Events/>}/>
       <Route path="/SignUp" element={<SignUp/>}/>
       <Route path="/Login" element={<Login/>}/>
-    </Routes> */}
+    </Routes>
       
-       <HomePage/>
+       
     </BrowserRouter>
  
       

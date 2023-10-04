@@ -25,44 +25,40 @@ const Navbar = (props) => {
     <  >
       <nav className={' bg-slate-200 flex items-center rounded-xl border  border-zinc-400'}>
         <div>
-          <Image className=' mx-20 rounded-lg' src={"/ayush-logo.png"} alt='Logo' width={40} height={20}/> 
+          <Image className=' mx-20 rounded-lg' src={"/logo-in-black.svg"} alt='Logo' width={40} height={20}/> 
         </div>
 
         <div className='middle '>
           <ul className='text-black flex items-center  text-sm ml-[250px] p-3 space-x-6'>
-            <li>
-              <Link href='/'>
+        
+              <Link href='/Home'>
                 <AiFillHome size={20} className={`ml-3 ${isLinkActive('/') ? 'active': ''}`} />
                 Home
               </Link>
-            </li>
-            <li>
+           
               <Link href='/Events'>
                 <MdEmojiEvents size={20} className={`ml-3 ${isLinkActive('/Events') ? 'active' : ''}`} />
                 Events
               </Link>
-            </li>
-            <li>
+           
               <Link href='/Explore'>
                 <FaWpexplorer size={20} className={`ml-3 ${isLinkActive('/Explore') ? 'active' : ''}`} />
                 Explore
               </Link>
-            </li>
-            <li>
+           
               <Link href='/Notifications'>
                 <MdNotifications size={20} className={`ml-8 ${isLinkActive('/Notifications') ? 'active' : ''}`} />
                 Notifications
               </Link>
-            </li>
-            <li>
+          
               <Link href='/Message'>
                 <BsFillChatDotsFill size={20} className={`ml-4 ${isLinkActive('/Message') ? 'active' : ''}`} />
                 Message
               </Link>
-            </li>
+          
 
             { !setisLoggedIn &&
-            <li>
+           
               <Link href='/Login'>
                 <AiOutlineLogin size={20} className={`ml-3 ${isLinkActive('/Login') ? 'active' : ''}`} />
                 Login
@@ -71,41 +67,40 @@ const Navbar = (props) => {
                
              
 
-            </li>
+           
              }
 
             { !setisLoggedIn &&
-            <li>
+           
              
               <Link href='/SignUp'>
                 <BsFillSignpostFill size={20} className={`ml-3 ${isLinkActive('/SignUp') ? 'active' : ''}`} />
                 Sign Up
               </Link>
                 
-            </li>
+           
                }
 
             { setisLoggedIn &&
-            <li>
+            
              
               <Link href='/LogOut'>
                 <BsFillSignpostFill size={20} className={`ml-3 ${isLinkActive('/SignUp') ? 'active' : ''}`} />
                 Log Out
               </Link>
                 
-            </li>
+           
             
                }
 
         { setisLoggedIn &&
-            <li>
+          
              
               <Link href='/LogOut'>
                 <BsFillSignpostFill size={20} className={`ml-3 ${isLinkActive('/SignUp') ? 'active' : ''}`} />
                 Profile
               </Link>
-                
-            </li>
+         
             
                }
           </ul>
