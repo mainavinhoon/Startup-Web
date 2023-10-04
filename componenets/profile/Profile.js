@@ -1,20 +1,20 @@
 "use client"
 import React from 'react';
 import Feed from '@/componenets/feed/Feed'
-const ProfileLogin = () => {
+const Profile = () => {
   return (
     <>
 
       <main className='flex justify-center gap-x-5 px-4 sm:px-12 mt-4'>
         <div className='flex flex-col md:flex-row gap-5 bg-white rounded-[10px] '>
 
-          {/* Sidebar */}
-          <div className='space-y-2 min-w-max max-w-lg relative flex flex-col items-center text-center'>
-            {/* Circular Profile Picture */}
-            <div
-              className=' w-20 h-20 mt-4 rounded-full overflow-hidden border-2 border-lime-950'
-              style={{ backgroundImage: 'url("/elonmusk.jpg")', backgroundSize: 'cover' }}
-            />
+        {/* Sidebar */}
+        <div className='space-y-2 min-w-max max-w-lg relative flex flex-col items-center text-center'>
+          {/* Circular Profile Picture */}
+          <div
+            className=' w-20 h-20 mt-4 rounded-full overflow-hidden border-2 border-lime-950'
+            style={{ backgroundImage: 'url("/elonmusk.jpg")', backgroundSize: 'cover' }}
+          />
 
             <div className='mt-5 py-4 space-x-0.5 '>
               <h4 className='hover:underline decoration-purple-700 underline-offset-1 cursor-pointer'>Elon Musk</h4>
@@ -53,22 +53,18 @@ const ProfileLogin = () => {
                    
            <div className='space-y-6 pb-24 max-w-lg'>
 
+      <div className=' bg-emerald-500 w-96 rounded-[10px]'>
           
-        <div className=' bg-emerald-500 p-3 space-y-3 border border-gray-300  flex-grow overflow-y-hidden   rounded-[10px]'>
-
           Creat a new post baby !!!
-
-        </div>
-
-        </div>
-
-      </main>
-
-
+            
+            </div>
+    </main>
+        
+   
 
 
     </>
   );
 }
 
-export default ProfileLogin;
+export default Profile;
