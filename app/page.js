@@ -9,7 +9,10 @@ import { useState } from "react"
 import Explore from "./Explore/page"
 import Notifications from "./Notifications/page"
 import Message from "./Message/page"
-// import Events from "./Events/Page"
+
+import Events from "./Events/Page"
+// import Events from "./Events/page"
+
 
  const Home = () => {
 

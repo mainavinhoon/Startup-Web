@@ -15,7 +15,7 @@ const Templete = ({title,desc1,desc2,image,formtype,setIsLoggedIn}) => {
             <span className='italic mt-5'>{desc2}</span>
         </p>
 
-        {formtype === "signup" ? (<SignUpForm/>):(<LoginForm/>)}
+        {formtype === "signup" ? (<SignUpForm setIsLoggedIn={setIsLoggedIn}/>):(<LoginForm setIsLoggedIn={setIsLoggedIn}/>)}
 
         <div className='flex items-center my-2 gap-x-2'>
           <div className=' w-full h-[1px] bg-black' ></div>
