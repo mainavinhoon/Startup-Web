@@ -4,19 +4,19 @@ import HomePage from "./Home/Page"
 import Login from "./Login/page"
 import SignUp from "./SignUp/page"
 import './globals.css'
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+// import { BrowserRouter } from "react-router-dom"
 import { useState } from "react"
 import Explore from "./Explore/page"
 import Notifications from "./Notifications/page"
 import Message from "./Message/page"
-import Events from "./Events/Page"
+// import Events from "./Events/Page"
 
  const Home = () => {
 
 const [isLoggedin, setisLoggedin] = useState(false)
   return (
   <>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
 {/* 
     <Routes>
       <Route path="/Events" element={<Events/>}/>
@@ -29,7 +29,7 @@ const [isLoggedin, setisLoggedin] = useState(false)
     </Routes> */}
       
        <HomePage/>
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
  
       
   </>

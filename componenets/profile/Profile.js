@@ -4,9 +4,9 @@ import Feed from '@/componenets/feed/Feed'
 const ProfileLogin = () => {
   return (
     <>
-
+     
     <main className='flex justify-center gap-x-5 px-4 sm:px-12'>
-      <div className='flex flex-col md:flex-row gap-5 bg-white rounded-[10px] '>
+      <div className='flex flex-col md:flex-row gap-5 bg-white rounded-[10px] h-full '>
 
         {/* Sidebar */}
         <div className='space-y-2 min-w-max max-w-lg relative flex flex-col items-center text-center'>
@@ -51,16 +51,16 @@ const ProfileLogin = () => {
        
       </div>
       
-
-      <div className=' bg-emerald-500 w-96 rounded-[10px]'>
+      <div className=' bg-emerald-500 w-96 flex-grow overflow-y-auto min-h-screen rounded-[10px]'>
           
           Creat a new post baby !!!
             
             </div>
+        
     </main>
+   
         
    
-
 
     </>
   );
