@@ -32,7 +32,7 @@ const Navbar = (props) => {
         <div className='text-black flex items-center  text-sm ml-[250px] p-3 space-x-6'>
          
         
-              <Link href='/Home'>
+              <Link href='/'>
                 <AiFillHome size={20} className={`ml-3 ${isLinkActive('/') ? 'active': ''}`} />
                 Home
               </Link>
@@ -68,7 +68,7 @@ const Navbar = (props) => {
                
              
 
-            </li>
+          
              }
 
             { !setisLoggedIn &&
@@ -104,7 +104,12 @@ const Navbar = (props) => {
          
             
                }
-          </ul>
+
+                <Link href='/Account'>
+                <MdAccountCircle size={20} className={`ml-0 ${isLinkActive('/MdAccountCircle') ? 'active' : ''}`} />
+                Me
+              </Link>
+          
         </div>
        
         

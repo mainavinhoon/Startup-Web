@@ -11,7 +11,7 @@ import Explore from "./Explore/page"
 import Notifications from "./Notifications/page"
 import Message from "./Message/page"
 
-import Events from "./Events/Page"
+// import Events from "./Events/Page"
 // import Events from "./Events/page"
 
 
@@ -20,8 +20,8 @@ import Events from "./Events/Page"
   const [isLoggedIn, setisLoggedIn] = useState(false)
   return (
   <>
-    <BrowserRouter>
- 
+    {/* <BrowserRouter> */}
+{/*  
     <Routes>
       <Route path="/" element={<HomePage/>}/>
       <Route path="/Events" element={<Events/>}/>
@@ -32,9 +32,9 @@ import Events from "./Events/Page"
       <Route path="/SignUp" element={<SignUp/>}/>
       <Route path="/Login" element={<Login isLoggedIn={isLoggedIn} setisLoggedIn={setisLoggedIn}/>}/>
     </Routes>
-      
-    
-    </BrowserRouter>
+       */}
+    <HomePage/>
+    {/* </BrowserRouter> */}
  
       
   </>
