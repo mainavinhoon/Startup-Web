@@ -28,8 +28,8 @@ const Navbar = (props) => {
           <Image className=' mx-20 rounded-lg' src={"/logo-in-black.svg"} alt='Logo' width={40} height={20}/> 
         </div>
 
-        <div className='middle '>
-          <ul className='text-black flex items-center  text-sm ml-[250px] p-3 space-x-6'>
+        <div className='text-black flex items-center  text-sm ml-[250px] p-3 space-x-6'>
+         
         
               <Link href='/Home'>
                 <AiFillHome size={20} className={`ml-3 ${isLinkActive('/') ? 'active': ''}`} />
@@ -103,7 +103,7 @@ const Navbar = (props) => {
          
             
                }
-          </ul>
+        
         </div>
        
         

@@ -4,7 +4,7 @@ import "./login.css"
 import Templete from '@/componenets/userlogin/Templete'
 
 
- const Login = ({setIsLoggedIn}) => {
+ const Login = ({setisLoggedIn}) => {
   return (
     <>
       <Templete
@@ -13,7 +13,7 @@ import Templete from '@/componenets/userlogin/Templete'
     desc1="You are at the login page of UniteUp"
     desc2="Enter Your Login Details"
     formtype="login"
-    setIsLoggedIn={setIsLoggedIn}
+    setisLoggedIn={setisLoggedIn}
 
 
     />

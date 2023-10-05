@@ -13,12 +13,12 @@ import Events from "./Events/page"
 import Navbar from "@/componenets/navbar/Navbar"
  const Home = () => {
 
-const [isLoggedin, setisLoggedin] = useState(false)
+  const [isLoggedIn, setisLoggedIn] = useState(false)
   return (
   <>
     <BrowserRouter>
      
-    
+     
     <Routes>
       <Route path="/" element={<HomePage/>}/>
       <Route path="/Events" element={<Events/>}/>
@@ -27,7 +27,7 @@ const [isLoggedin, setisLoggedin] = useState(false)
       <Route path="/Message" element={<Message/>}/>
       <Route path="/Events" element={<Events/>}/>
       <Route path="/SignUp" element={<SignUp/>}/>
-      <Route path="/Login" element={<Login/>}/>
+      <Route path="/Login" element={<Login isLoggedIn={isLoggedIn} setisLoggedIn={setisLoggedIn}/>}/>
     </Routes>
       
        
