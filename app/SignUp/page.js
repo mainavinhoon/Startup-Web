@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Templete from '@/componenets/userlogin/Templete'
-const SignUp = (setIsLoggedIn) => {
+const SignUp = (setisLoggedIn) => {
   return (
    
     <>
@@ -12,7 +12,7 @@ const SignUp = (setIsLoggedIn) => {
     desc1="You are at the Sign Up page of UniteUp"
     desc2="Enter Your Sign Up Details"
     formtype="signup"
-    setIsLoggedIn={setIsLoggedIn}
+    setisLoggedIn={setisLoggedIn}
 
 
     />

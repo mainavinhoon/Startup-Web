@@ -22,20 +22,20 @@ const Profile = () => {
             </div>
 
             <div className='hidden md:inline text-left text-sm'>
-              <div className='font-medium sidebarbutton space-y-0.5'>
-                <div className='flex sidebarbutton justify-between space-x-4'>
+              <div className='font-medium  border-gray-600 py-3 px-4 cursor-pointer opacity-80 hover:opacity-100 space-y-0.5'>
+                <div className='flex  border-gray-600 py-3 px-4 cursor-pointer opacity-80 hover:opacity-100 justify-between space-x-4'>
                   <h4>
                     Who reached your profile?
                   </h4>
                   <span className='text-blue-500'>201</span>
 
                 </div>
-                <div className='flex sidebarbutton justify-between space-x-4'>
+                <div className='flex  border-gray-600 py-3 px-4 cursor-pointer opacity-80 hover:opacity-100 justify-between space-x-4'>
                   <h4>View count for your post</h4>
                   <span className='text-blue-500'>602</span>
                 </div>
 
-                <div className='flex sidebarbutton justify-between  space-x-4'>
+                <div className='flex  border-gray-600 py-3 px-4 cursor-pointer opacity-80 hover:opacity-100 justify-between  space-x-4'>
                   <h4>
                     Access exclusive resources and further insights
                   </h4>

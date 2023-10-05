@@ -5,35 +5,36 @@ import HomePage from "@/app/Home/Page"
 import Login from "./Login/page"
 import SignUp from "./SignUp/page"
 import './globals.css'
-// import { BrowserRouter } from "react-router-dom"
+import { BrowserRouter, Routes , Route } from "react-router-dom"
 import { useState } from "react"
 import Explore from "./Explore/page"
 import Notifications from "./Notifications/page"
 import Message from "./Message/page"
 
-// import Events from "./Events/page"
+import Events from "./Events/Page"
 // import Events from "./Events/page"
 
 
  const Home = () => {
 
-const [isLoggedin, setisLoggedin] = useState(false)
+  const [isLoggedIn, setisLoggedIn] = useState(false)
   return (
   <>
-    {/* <BrowserRouter> */}
-{/* 
+    <BrowserRouter>
+ 
     <Routes>
+      <Route path="/" element={<HomePage/>}/>
       <Route path="/Events" element={<Events/>}/>
       <Route path="/Explore" element={<Explore/>}/>
       <Route path="/Notifiactions" element={<Notifications/>}/>
       <Route path="/Message" element={<Message/>}/>
       <Route path="/Events" element={<Events/>}/>
       <Route path="/SignUp" element={<SignUp/>}/>
-      <Route path="/Login" element={<Login/>}/>
-    </Routes> */}
+      <Route path="/Login" element={<Login isLoggedIn={isLoggedIn} setisLoggedIn={setisLoggedIn}/>}/>
+    </Routes>
       
-       <HomePage/>
-    {/* </BrowserRouter> */}
+    
+    </BrowserRouter>
  
       
   </>

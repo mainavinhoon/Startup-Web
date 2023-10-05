@@ -3,7 +3,9 @@ import React, { useState } from 'react'
 import {AiOutlineEye,AiOutlineEyeInvisible } from "react-icons/ai"
 import Link from 'next/link'
 
-const LoginForm = (setIsLoggedIn) => {
+
+const LoginForm = (setisLoggedIn) => {
+
 
 
     const [FormData, setFormData] = useState({
@@ -21,7 +23,8 @@ const LoginForm = (setIsLoggedIn) => {
 
     function submitHandler(event) {
         event.preventDefault();
-        setIsLoggedIn(true);
+        console.log(setisLoggedIn)
+        // setisLoggedIn(true);
       
         
     }

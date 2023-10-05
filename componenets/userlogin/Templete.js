@@ -4,7 +4,7 @@ import LoginForm from './LoginForm'
 import SignUpForm from './SignUpForm'
 import {FcGoogle} from "react-icons/fc"
 import Image from 'next/image'
-const Templete = ({title,desc1,desc2,image,formtype,setIsLoggedIn}) => {
+const Templete = ({title,desc1,desc2,image,formtype,setisLoggedIn}) => {
   return (
     <div className='flex w-11/12 max-w-[1160px] py-12 mx-auto gap-x-12 gap-y-0'>
       <div className='w-[1160px]'>
@@ -15,7 +15,7 @@ const Templete = ({title,desc1,desc2,image,formtype,setIsLoggedIn}) => {
             <span className='italic mt-5'>{desc2}</span>
         </p>
 
-        {formtype === "signup" ? (<SignUpForm setIsLoggedIn={setIsLoggedIn}/>):(<LoginForm setIsLoggedIn={setIsLoggedIn}/>)}
+        {formtype === "signup" ? (<SignUpForm setisLoggedIn={setisLoggedIn}/>):(<LoginForm setisLoggedIn={setisLoggedIn}/>)}
 
         <div className='flex items-center my-2 gap-x-2'>
           <div className=' w-full h-[1px] bg-black' ></div>
