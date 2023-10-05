@@ -5,7 +5,7 @@ const Profile = () => {
   return (
     <>
 
-      <main className='flex justify-center gap-x-5 px-4 sm:px-12 mt-4'>
+      <main className='flex ml-20 justify-center gap-x-5 px-4 sm:px-12 mt-4'>
         <div className='flex flex-col md:flex-row gap-5 bg-white rounded-[10px] '>
 
         {/* Sidebar */}
@@ -50,14 +50,9 @@ const Profile = () => {
 
 
         </div>
-                   
-           <div className='space-y-6 pb-24 max-w-lg'>
-
-      <div className=' bg-emerald-500 w-96 rounded-[10px]'>
           
-          Creat a new post baby !!!
             
-            </div>
+         
     </main>
         
    
