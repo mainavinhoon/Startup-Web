@@ -1,6 +1,7 @@
 "use client"
 import React from "react"
-import HomePage from "./Home/page"
+// import HomePage from "./Home/page"
+import HomePage from "@/app/Home/Page"
 import Login from "./Login/page"
 import SignUp from "./SignUp/page"
 import './globals.css'
@@ -10,7 +11,7 @@ import Explore from "./Explore/page"
 import Notifications from "./Notifications/page"
 import Message from "./Message/page"
 
-import Events from "./Events/Page"
+// import Events from "./Events/page"
 // import Events from "./Events/page"
 
 

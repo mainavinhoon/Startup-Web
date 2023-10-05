@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineSearch, AiFillHome, AiOutlineLogin } from 'react-icons/ai';
-import { MdEmojiEvents, MdNotifications } from 'react-icons/md';
+import { MdEmojiEvents, MdNotifications, MdAccountCircle } from 'react-icons/md';
 import { FaWpexplorer } from 'react-icons/fa';
 import { BsFillChatDotsFill, BsFillSignpostFill } from 'react-icons/bs';
 import { useRouter } from 'next/navigation'; // Import the useRouter function for Server Components
@@ -23,7 +23,7 @@ const Navbar = (props) => {
 
   return (
     <  >
-      <nav className={' bg-slate-200 flex items-center rounded-xl border  border-zinc-400'}>
+      <nav className={' bg-slate-200 flex items-center rounded-xl border border-zinc-400'}>
         <div>
           <Image className=' mx-20 rounded-lg' src={"/ayush-logo.png"} alt='Logo' width={40} height={20}/> 
         </div>
@@ -64,14 +64,10 @@ const Navbar = (props) => {
             { !setisLoggedIn &&
             <li>
               <Link href='/Login'>
-                <AiOutlineLogin size={20} className={`ml-3 ${isLinkActive('/Login') ? 'active' : ''}`} />
+                <AiOutlineLogin size={20} className={`ml-2 ${isLinkActive('/Login') ? 'active' : ''}`} />
                 Login
               </Link>
-
-               
-             
-
-            </li>
+          </li>
              }
 
             { !setisLoggedIn &&
@@ -108,6 +104,13 @@ const Navbar = (props) => {
             </li>
             
                }
+
+                <li>
+              <Link href='/Account'>
+                <MdAccountCircle size={20} className={`ml-0 ${isLinkActive('/Account') ? 'active' : ''}`} />
+                Me
+              </Link>
+            </li>
           </ul>
         </div>
        
