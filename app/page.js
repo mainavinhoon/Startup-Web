@@ -4,7 +4,7 @@ import HomePage from "./Home/page"
 import Login from "./Login/page"
 import SignUp from "./SignUp/page"
 import './globals.css'
-// import { BrowserRouter } from "react-router-dom"
+import { BrowserRouter, Routes , Route } from "react-router-dom"
 import { useState } from "react"
 import Explore from "./Explore/page"
 import Notifications from "./Notifications/page"
@@ -17,7 +17,7 @@ import Events from "./Events/page"
   return (
   <>
     <BrowserRouter>
-{/* 
+ 
     <Routes>
       <Route path="/" element={<HomePage/>}/>
       <Route path="/Events" element={<Events/>}/>
@@ -29,7 +29,7 @@ import Events from "./Events/page"
       <Route path="/Login" element={<Login isLoggedIn={isLoggedIn} setisLoggedIn={setisLoggedIn}/>}/>
     </Routes>
       
-       <HomePage/>
+    
     </BrowserRouter>
  
       
