@@ -8,7 +8,7 @@ const HomePage = () => {
 
   // const [isLoggedin, setisLoggedIn] = useState(false)
   return (
-    <div className='flex'>
+    <div className='flex object-fill '>
 
     <Profile />
     <Feed/>

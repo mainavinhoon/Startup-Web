@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 // import HomePage from "./Home/page"
-import HomePage from "@/app/Home/page"
+import HomePage from "../app/Home/page"
 import Login from "./Login/page"
 import SignUp from "./SignUp/page"
 import './globals.css'

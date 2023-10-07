@@ -13,7 +13,7 @@ const ModalComponent = ({ modalOpen, setModalOpen ,setStatus, status, onBtn }) =
         onOk={() => setModalOpen(false)}
         onCancel={() => setModalOpen(false)}
         footer={[
-          <Button onClick={onBtn} key="submit" type="primary" disabled= {status.length > 0 ? false : true}>
+          <Button key={ModalComponent.id} onClick={onBtn} type="primary" disabled= {status.length > 0 ? false : true}>
             Post
           </Button>,
         ]}

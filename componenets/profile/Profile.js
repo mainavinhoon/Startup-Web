@@ -5,7 +5,7 @@ const Profile = () => {
   return (
     <>
 
-      <main className='flex ml-20 justify-center gap-x-5 px-4 sm:px-12 mt-4'>
+      <main className='flex ml-20 h-fit justify-center gap-x-5 px-4 sm:px-12 mt-4'>
         <div className='flex flex-col md:flex-row gap-5 bg-white rounded-[10px] '>
 
         {/* Sidebar */}
